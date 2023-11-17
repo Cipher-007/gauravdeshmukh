@@ -4,7 +4,7 @@ export type Project = {
   tech: string[];
   links: {
     github: string;
-    deploy: string;
+    deploy?: string;
   };
   image?: string;
 };

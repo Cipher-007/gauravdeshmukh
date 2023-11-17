@@ -10,12 +10,13 @@ type Props = {
 };
 
 export default function FeaturedCard({ project, index }: Props) {
+  const link = project.links.deploy
+    ? project.links.deploy
+    : project.links.github;
   return (
     <div key={project.title} className="grid grid-cols-3 pb-20">
       <Link
-        href={
-          project.links.deploy ? project.links.deploy : project.links.github
-        }
+        href={link}
         className={cn(
           "col-span-2 mt-6 h-fit w-fit rounded-md bg-[#64ffda] mix-blend-screen hover:bg-transparent lg:mt-0",
           index % 2 === 0 ? null : "order-last ml-[4.5rem]",
@@ -39,7 +40,7 @@ export default function FeaturedCard({ project, index }: Props) {
           Featured Project {index}
         </p>
         <h3 className="pb-7 text-2xl font-bold text-[#ccd6f6]">
-          <Link href={project.links.deploy}>{project.title}</Link>
+          <Link href={link}>{project.title}</Link>
         </h3>
 
         <div

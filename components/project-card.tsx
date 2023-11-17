@@ -16,9 +16,11 @@ export default function ProjectCard({ project }: Props) {
             <Link href={project.links.github}>
               <Github />
             </Link>
-            <Link href={project.links.deploy}>
-              <Share />
-            </Link>
+            {project.links.deploy && (
+              <Link href={project.links.deploy}>
+                <Share />
+              </Link>
+            )}
           </div>
         </div>
         <div className="py-4 text-lg font-bold">{project.title}</div>

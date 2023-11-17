@@ -9,8 +9,7 @@ export default function Projects() {
         "Node.js CLI for fast note-taking with efficient creation, deletion, and search features. User-friendly web interface optimizes note management, enhancing productivity.",
       tech: ["Node", "JavaScript"],
       links: {
-        github: "https://github.com",
-        deploy: "https://projectverse.vercel.app",
+        github: "https://github.com/Cipher-007/notes-CLI",
       },
     },
     {
@@ -19,8 +18,8 @@ export default function Projects() {
         "A web app mirroring a food ordering platform, leveraging Firebase for menu item management and order storage. Utilized React.js for a seamless and intuitive frontend experience.",
       tech: ["React", "JavaScript", "Firebase"],
       links: {
-        github: "https://github.com",
-        deploy: "https://projectverse.vercel.app",
+        github: "https://github.com/Cipher-007/food-order",
+        deploy: "https://food-order-cipher-007.vercel.app",
       },
     },
   ];
