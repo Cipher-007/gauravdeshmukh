@@ -1,6 +1,6 @@
+import type { Project } from "@/lib/types";
 import Link from "next/link";
 import { Folder, Github, Share } from "./icons";
-import type { Project } from "@/lib/types";
 
 type Props = {
   project: Project;

@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { Logo } from "./icons";
-import { cn } from "@/lib/utils";
 import { useScrollDirection } from "@/lib/hook";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Logo } from "./icons";
 
 export default function Nav() {
   const [scrolledToTop, setScrolledToTop] = useState(true);

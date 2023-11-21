@@ -1,8 +1,9 @@
+import Email from "@/components/email";
+import Nav from "@/components/nav";
+import Socials from "@/components/social";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "./globals.css";
-import Socials from "@/components/social";
-import Nav from "@/components/nav";
-import Email from "@/components/email";
 
 export const metadata: Metadata = {
   title: "Gaurav Deshmukh",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Socials />
         <main className="h-full snap-y">{children}</main>
         <Email />
+        <Analytics />
       </body>
     </html>
   );

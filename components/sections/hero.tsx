@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="mx-auto flex h-screen max-w-[1000px] snap-center flex-col items-start justify-center">
+    <section className="mx-auto flex h-screen max-w-[1000px] snap-center flex-col items-start justify-center pl-28 pr-20 2xl:px-0">
       <h1 className="ml-1 font-mono text-[#64ffda]">Hi, my name is</h1>
       <h2 className="mt-6 text-6xl font-bold text-[#ccd6f6]">
         Gaurav Deshmukh.

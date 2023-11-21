@@ -1,8 +1,8 @@
+import type { Project } from "@/lib/types";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { Github, Share } from "./icons";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
-import type { Project } from "@/lib/types";
 
 type Props = {
   project: Project;
