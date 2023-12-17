@@ -1,32 +1,32 @@
 import Link from "next/link";
-import { Github, Instagram, Linkedin, Twitter } from "./icons";
+import { GithubIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from "./icons";
 
 export default function Socials() {
   const socialMedia = [
     {
       name: "Github",
       url: "https://github.com/Cipher-007",
-      logo: <Github />,
+      logo: <GithubIcon />,
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/cipher__07",
-      logo: <Instagram />,
+      logo: <InstagramIcon />,
     },
     {
       name: "Twitter",
       url: "https://twitter.com/cipher__27",
-      logo: <Twitter />,
+      logo: <TwitterIcon />,
     },
     {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/gauravdeshmukh07",
-      logo: <Linkedin />,
+      logo: <LinkedinIcon />,
     },
   ];
 
   return (
-    <aside className="fixed bottom-0 left-[40px] right-auto text-[#8892b0]">
+    <aside className="fixed bottom-0 left-[40px] right-auto hidden text-[#8892b0] md:block">
       {socialMedia.map((social, i) => (
         <div
           className="px-[10px] py-[13px] hover:-translate-y-1 hover:scale-110 hover:text-[#64ffda]"

@@ -24,13 +24,13 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="flex snap-center flex-col items-center justify-center px-28 pt-20 text-[#ccd6f6] 2xl:px-[21rem]">
+    <section className="flex snap-center flex-col items-center justify-center pt-20 text-[#ccd6f6]">
       <h1 className="text-3xl font-bold">Other Noteworthy Projects</h1>
-      <div className="grid w-full grow grid-cols-2 flex-wrap items-center gap-4 pt-10">
+      <div className="grid w-full grow flex-wrap items-center gap-4 pt-10 md:grid-cols-2">
         {projects.map((project, i) => (
           <ProjectCard project={project} key={i} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <section
-      className="flex snap-center flex-col items-center justify-center px-28 pb-40 pt-56 text-[#ccd6f6] 2xl:px-[21rem]"
+      className="flex snap-center flex-col items-center justify-center pb-40 pt-56 text-[#ccd6f6]"
       id="contact"
     >
       <div className="flex gap-x-2">
@@ -11,7 +11,7 @@ export default function Contact() {
         <h2 className="text-[#64ffda]">What&apos;s Next?</h2>
       </div>
       <h2 className="py-4 text-5xl font-bold">Get In Touch</h2>
-      <p className="px-52 text-center text-[#8892b0]">
+      <p className="text-center text-[#8892b0] md:px-10 lg:px-48">
         At present, I am actively seeking new opportunities and welcome any
         professional inquiries or connections. Whether you have a question or
         just want to say hi, I&apos;ll try my best to get back to you!

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Email() {
   return (
-    <aside className="fixed bottom-0 left-auto right-[40px]">
+    <aside className="fixed bottom-0 left-auto right-[40px] hidden md:block">
       <Link
         href="mailto:gaurav7deshmukh@gmail.com"
         className="font-mono text-xs text-gray-400 [writing-mode:vertical-lr]"

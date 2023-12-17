@@ -1,4 +1,4 @@
-export function Logo() {
+export function LogoIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export function Logo() {
   );
 }
 
-export function Github() {
+export function GithubIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export function Github() {
   );
 }
 
-export function Instagram() {
+export function InstagramIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export function Instagram() {
   );
 }
 
-export function Linkedin() {
+export function LinkedinIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ export function Linkedin() {
   );
 }
 
-export function Twitter() {
+export function TwitterIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ export function Twitter() {
   );
 }
 
-export function Share() {
+export function ShareIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ export function Share() {
   );
 }
 
-export function Folder() {
+export function FolderIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -153,6 +153,45 @@ export function Folder() {
     >
       <title>Folder</title>
       <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+    </svg>
+  );
+}
+
+export function MenuIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  );
+}
+
+export function CloseIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
     </svg>
   );
 }

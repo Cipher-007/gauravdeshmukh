@@ -20,7 +20,9 @@ export default function RootLayout({
       <body className="overflow-x-hidden">
         <Nav />
         <Socials />
-        <main className="h-full snap-y">{children}</main>
+        <main className="h-full snap-y px-12 md:px-28 2xl:px-[14rem]">
+          {children}
+        </main>
         <Email />
         <Analytics />
       </body>

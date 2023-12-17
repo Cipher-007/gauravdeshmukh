@@ -1,6 +1,6 @@
 import type { Project } from "@/lib/types";
 import Link from "next/link";
-import { Folder, Github, Share } from "./icons";
+import { FolderIcon, GithubIcon, ShareIcon } from "./icons";
 
 type Props = {
   project: Project;
@@ -11,14 +11,14 @@ export default function ProjectCard({ project }: Props) {
     <div className="flex h-full flex-col justify-between overflow-auto rounded-md bg-[#112240] p-5 shadow transition-all duration-200 ease-in-out hover:-translate-y-2">
       <div>
         <div className="flex justify-between">
-          <Folder />
+          <FolderIcon />
           <div className="flex gap-x-4">
             <Link href={project.links.github}>
-              <Github />
+              <GithubIcon />
             </Link>
             {project.links.deploy && (
               <Link href={project.links.deploy}>
-                <Share />
+                <ShareIcon />
               </Link>
             )}
           </div>

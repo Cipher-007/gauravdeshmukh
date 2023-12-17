@@ -8,9 +8,9 @@ export default function Featured() {
       description:
         "A productivity-focused project management app with streamlined organization and seamless multi-tenancy support for efficient team collaboration and task management.",
       tech: [
-        "Next.js",
-        "React",
         "Node",
+        "React",
+        "Next.js",
         "Drizzle",
         "TypeScript",
         "Postgresql",
@@ -25,14 +25,14 @@ export default function Featured() {
     {
       title: "Diary Insights",
       description:
-        "Developed a personal diary app using AI-driven analysis, powered by OpenAI's GPT-3 Turbo model. Enhances user experience with automated entry summaries, mood assessment, and sentiment scores.",
+        "A personal diary app using AI-driven analysis, powered by OpenAI's GPT-3 Turbo model. Enhances user experience with automated entry summaries, mood assessment, and sentiment scores.",
       tech: [
-        "Next.js",
-        "React",
         "SQL",
         "Node",
+        "React",
         "Clerk",
         "OpenAI",
+        "Next.js",
         "LangChain",
         "TypeScript",
         "Tailwind CSS",
@@ -45,20 +45,21 @@ export default function Featured() {
     },
   ];
   return (
-    <section
-      className="snap-center px-28 pt-40 text-[#ccd6f6] 2xl:px-[21rem]"
-      id="work"
-    >
+    <section className="snap-center pt-40 text-[#ccd6f6]" id="work">
       <div className="flex gap-x-2 pb-10">
-        <h2 className="self-end font-mono text-xl text-[#64ffda]">02.</h2>
-        <h2 className="text-3xl font-bold text-[#ccd6f6]">
+        <h2 className="self-end font-mono text-base text-[#64ffda] md:text-xl lg:text-2xl">
+          02.
+        </h2>
+        <h2 className="text-lg font-bold text-[#ccd6f6] md:text-2xl lg:text-3xl">
           Some Things I&apos;ve Built
         </h2>
-        <div className="ml-5 h-[1px] w-[30%] self-center bg-[#233554] content-none" />
+        <div className="h-[1px] w-[30%] self-center bg-[#233554] content-none md:ml-5" />
       </div>
-      {featureProjects.map((project, i) => (
-        <FeaturedCard project={project} key={i} index={i} />
-      ))}
+      <ul>
+        {featureProjects.map((project, i) => (
+          <FeaturedCard project={project} key={i} index={i} />
+        ))}
+      </ul>
     </section>
   );
 }

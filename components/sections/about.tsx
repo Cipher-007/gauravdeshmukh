@@ -13,12 +13,16 @@ export default function About() {
   return (
     <section
       id="about"
-      className="snap-center flex-col px-28 py-24 text-lg text-[#8892b0] 2xl:px-80"
+      className="snap-center flex-col py-24 text-lg text-[#8892b0]"
     >
       <div className="flex">
         <div className="flex gap-x-2">
-          <h2 className="self-end font-mono text-[#64ffda]">01.</h2>
-          <h2 className="text-2xl font-bold text-[#ccd6f6]">About Me</h2>
+          <h2 className="self-end font-mono text-base text-[#64ffda] md:text-xl lg:text-2xl">
+            01.
+          </h2>
+          <h2 className="text-lg font-bold text-[#ccd6f6] md:text-2xl lg:text-3xl">
+            About Me
+          </h2>
         </div>
         <div className="ml-4 h-[1px] w-[25%] self-center bg-[#233554] content-none" />
       </div>
